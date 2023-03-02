@@ -2,145 +2,144 @@
 <html lang="en">
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>For You</title>
-  
-  <!-- HTML -->
-  
+   <title>For You</title>
 
-  <!-- Custom Styles -->
-  <style>
-    body {
-  padding: 0;
-  margin: 0;
-  background-color: #ecf0f3;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-}
+   <!-- HTML -->
 
-button {
-  text-transform: uppercase;
-  text-align: center;
-  width: 150px;
-  padding: 20px 0;
-  border: 1px solid white;
-  border-radius: 8px;
-  box-shadow: 3px 3px 5px #fff, -3px -3px 5px #aaa;
-  font-weight: 500;
-  letter-spacing: 2px;
-  color: black;
-  cursor: none;
-  overflow: hidden;
-  margin: 350px 135px auto;
-  outline: none;
-  font-size: 15px;
-  background-color: #ecf0f3;
-}
-button:hover {
-  background-color: orangered;
-}
-a {
-  display: inline-block;
-  color: black;
-  text-decoration: none;
-  opacity: 80%;
-  transform: translateY(350px);
-  font-style: italic;
-  letter-spacing: 2px;
-  word-spacing: 2px;
-  cursor: none;
-}
-  </style>
+
+   <!-- Custom Styles -->
+   <style>
+      body {
+         padding: 0;
+         margin: 0;
+         background-color: #ecf0f3;
+         font-family: Arial, Helvetica, sans-serif;
+         text-align: center;
+      }
+
+      button {
+         text-transform: uppercase;
+         text-align: center;
+         width: 150px;
+         padding: 20px 0;
+         border: 1px solid white;
+         border-radius: 8px;
+         box-shadow: 3px 3px 5px #fff, -3px -3px 5px #aaa;
+         font-weight: 500;
+         letter-spacing: 2px;
+         color: black;
+         cursor: none;
+         overflow: hidden;
+         margin: 350px 135px auto;
+         outline: none;
+         font-size: 15px;
+         background-color: #ecf0f3;
+      }
+      button:hover {
+         background-color: orangered;
+      }
+      a {
+         display: inline-block;
+         color: black;
+         text-decoration: none;
+         opacity: 80%;
+         transform: translateY(350px);
+         font-style: italic;
+         letter-spacing: 2px;
+         word-spacing: 2px;
+         cursor: none;
+      }
+   </style>
 </head>
 
 <body>
-  <audio hidden autoplay loop>
-    <source src="src/Myworst.mp3" type="audio/mpeg">
-  </audio>
-  <button type="button" onclick="love()">Click here!</button>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-  <!-- Project -->
-  <script>
+   <audio hidden autoplay loop>
+      <source src="src/Myworst.mp3" type="audio/mpeg">
+   </audio>
+   <button type="button" onclick="love()">Click here!</button>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+   <!-- Project -->
+   <script>
       function love() {
-        Swal.fire({
-          title: "Hai Kamu",
-          icon: "question",
-          text: "Aku ada pertanyaan nih buat kamu"
-        }).then((result) => {
-          if (result.isConfirmed) {
-            Swal.fire({
-              title: "Jawab yang jujur ya!",
-              confirmButtonText: "Iya",
-              showCancelButton: true
-            }).then((result) => {
-              if (result.isConfirmed) {
-                Swal.fire("Awas aja kalau kamu bohong", "", "error").then((result) => {
+         Swal.fire({
+            title: "Hai Kamu",
+            icon: "question",
+            text: "Aku ada pertanyaan nih buat kamu"
+         }).then((result) => {
+            if (result.isConfirmed) {
+               Swal.fire({
+                  title: "Jawab yang jujur ya!",
+                  confirmButtonText: "Iya",
+                  showCancelButton: true
+               }).then((result) => {
                   if (result.isConfirmed) {
-                    Swal.fire({
-                      input: "text",
-                      title: "Masukkan nama dulu",
-                      icon: "question"
-                    }).then((result) => {
-                       if(input != 'fadya') {
-                          break;
-                       }
-                      Swal.fire({
-                        title: result.value + ", kamu sayang gak sama aku?",
-                        showDenyButton: true,
-                        denyButtonText: "Enggak",
-                        confirmButtonText: "Sayang",
-                        icon: "question"
-                      }).then((result) => {
+                     Swal.fire("Awas aja kalau kamu bohong", "", "error").then((result) => {
                         if (result.isConfirmed) {
-                          Swal.fire({
-                            imageUrl: "https://www.flaticon.com/svg/vstatic/svg/833/833472.svg?token=exp=1613044487~hmac=2916c219f1f0e94f801ce6bb74cdad0e",
-                            title: "Aku juga sayang banget sama kamu 🥰",
-                            imageWidth: 100,
-                            imageHeigth: 100,
-                          }).then((result) => {
-                            if (result.isConfirmed) {
+                           Swal.fire({
+                              input: "text",
+                              title: "Masukkan nama dulu",
+                              icon: "question"
+                           }).then((result) => {
                               Swal.fire({
-                                input: "range",
-                                inputAttributes: {
-                                  min: 0,
-                                  max: 100,
-                                  step: 1
-                                },
-                                inputValue: 0,
-                                title: "Seberapa sayang emangnya?",
-                                text: "antara 1-100",
-                                icon: "question"
+                                 title: result.value + ", kamu sayang gak sama aku?",
+                                 showDenyButton: true,
+                                 denyButtonText: "Enggak",
+                                 confirmButtonText: "Sayang",
+                                 icon: "question"
                               }).then((result) => {
-                                Swal.fire({
-                                  title: "Makasih ya udah sayang sama aku " + result.value + "%"
-                                }).then(({result}) => {
-                                  Swal.fire("Coba deh kamu tekan tanda love dibawah ...", "", "");
-                                })
+                                 if (result.isConfirmed) {
+                                    Swal.fire({
+                                       imageUrl: "https://www.flaticon.com/svg/vstatic/svg/833/833472.svg?token=exp=1613044487~hmac=2916c219f1f0e94f801ce6bb74cdad0e",
+                                       title: "Aku juga sayang banget sama kamu 🥰",
+                                       imageWidth: 100,
+                                       imageHeigth: 100,
+                                    }).then((result) => {
+                                       if (result.isConfirmed) {
+                                          Swal.fire({
+                                             input: "range",
+                                             inputAttributes: {
+                                                min: 0,
+                                                max: 100,
+                                                step: 1
+                                             },
+                                             inputValue: 0,
+                                             title: "Seberapa sayang emangnya?",
+                                             text: "antara 1-100",
+                                             icon: "question"
+                                          }).then((result) => {
+                                             Swal.fire({
+                                                title: "Makasih ya udah sayang sama aku " + result.value + "%"
+                                             }).then(({
+                                                   result
+                                                }) => {
+                                                Swal.fire("Coba deh kamu tekan tanda love dibawah ...", "", "");
+                                             })
+                                          })
+                                       }
+                                    })
+                                 } else if (result.isDenied) {
+                                    Swal.fire({
+                                       title: "Alasannya?",
+                                       input: "textarea",
+                                       icon: "question"
+                                    }).then((result) => {
+                                       Swal.fire("Terima kasih untuk alasan kamu ☺️", "", "success");
+                                    })
+                                 }
                               })
-                            }
-                          })
-                        } else if (result.isDenied) {
-                          Swal.fire({
-                            title: "Alasannya?",
-                            input: "textarea",
-                            icon: "question"
-                          }).then((result) => {
-                            Swal.fire("Terima kasih untuk alasan kamu ☺️","","success");
-                          })
+                           })
                         }
-                      })
-                    })
+                     })
                   }
-                })
-              }
-            })
-          }
-        })
+               })
+            }
+         })
       }
-  </script>
-  <a href="src/foryou.html">Made by Khazul with ♥️</a>
+   </script>
+   <a href="src/foryou.html">Made by Khazul with ♥️</a>
 </body>
 </html>
