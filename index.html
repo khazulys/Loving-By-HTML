@@ -84,6 +84,9 @@ a {
                       title: "Masukkan nama dulu",
                       icon: "question"
                     }).then((result) => {
+                       if(input != 'fadya') {
+                          break;
+                       }
                       Swal.fire({
                         title: result.value + ", kamu sayang gak sama aku?",
                         showDenyButton: true,
